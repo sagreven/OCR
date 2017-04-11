@@ -18,3 +18,6 @@ LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
 make install
 ldconfig
 tesseract -v
+
+
+ln -s /usr/local/lib/liblept.so /usr/lib
