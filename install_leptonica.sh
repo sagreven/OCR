@@ -18,6 +18,12 @@ LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
 make install
 ldconfig
 tesseract -v
-
+cd ..
 
 ln -s /usr/local/lib/liblept.so /usr/lib
+
+
+wget https://github.com/tesseract-ocr/tessdata/raw/master/deu.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/master/nld.traineddata
+mv *.traineddata /usr/local/share/tessdata
