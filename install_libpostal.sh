@@ -8,7 +8,8 @@ export PATH=$PKG_CONFIG_PATH:$PATH
 make
 sudo make install
 sudo ldconfig
-git clone https://github.com/openvenues/jpostal.git
 cd ..
+git clone https://github.com/openvenues/jpostal.git
+
 cd jpostal
 ./gradlew assemble
