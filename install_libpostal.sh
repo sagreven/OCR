@@ -3,6 +3,12 @@ git clone https://github.com/openvenues/libpostal
 cd libpostal
 ./bootstrap.sh
 ./configure
+export PKG_CONFIG_PATH=/root/OCR/libpostal
+export PATH=$PKG_CONFIG_PATH:$PATH
 make
 sudo make install
 sudo ldconfig
+git clone https://github.com/openvenues/jpostal.git
+cd ..
+cd jpostal
+./gradlew assemble
