@@ -2,9 +2,9 @@ yum -y update
 yum -y install libstdc++ autoconf automake libtool autoconf-archive pkg-config gcc gcc-c++ make libjpeg-devel libpng-devel libtiff-devel zlib-devel
 
 yum remove tesseract -y
-wget http://www.leptonica.com/source/leptonica-1.74.1.tar.gz
-tar xzvf leptonica-1.74.1.tar.gz
-cd leptonica-1.74.1
+wget http://www.leptonica.com/source/leptonica-1.74.4.tar.gz
+tar xzvf leptonica-1.74.4.tar.gz
+cd leptonica-1.74.4
 ./configure
 make
 make install
