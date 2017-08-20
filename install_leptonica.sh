@@ -1,5 +1,10 @@
 yum -y update 
-yum -y install libstdc++ autoconf automake libtool autoconf-archive pkg-config gcc gcc-c++ make libjpeg-devel libpng-devel libtiff-devel zlib-devel
+yum -y remove libpng-devel
+yum -y install libstdc++ autoconf automake libtool autoconf-archive pkg-config gcc gcc-c++ make libjpeg-devel  libtiff-devel zlib-devel
+
+wget http://sourceforge.net/projects/libpng/files/libpng16/1.6.21/libpng-1.6.21.tar.gz/download -O libpng.tar.gz && tar -xvf libpng.tar.gz && cd libpng-1.6.21 && sudo bash configure --prefix=/usr/local/libpng && sudo make install
+
+
 
 yum remove tesseract -y
 wget http://www.leptonica.com/source/leptonica-1.74.4.tar.gz
