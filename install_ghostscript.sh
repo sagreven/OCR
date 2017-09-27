@@ -5,6 +5,7 @@ cd ghostscript-9.21
 make
 make install
 make so
-rm -rf /usr/lib/libgs.so
-ln -s sobin/libgs.so /usr/lib
+rm -rf /usr/lib64/libgs.so
+cp sobin/libgs.so.9.21 /usr/lib64
+ln -s /usr/lib64/libgs.so.9.21 /usr/lib64/libgs.so.9
 
