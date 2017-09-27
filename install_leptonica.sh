@@ -26,7 +26,9 @@ tesseract -v
 cd ..
 
 ln -s /usr/local/lib/liblept.so /usr/lib
-
+rm -f /usr/local/lib/libtesseract.so*
+ln -s /usr/local/lib/libtesseract.so.4 /usr/lib/libtesseract.so.4
+ln -s /usr/local/lib/libtesseract.so.4.0.0 /usr/lib/libtesseract.so.4.0.0
 
 wget https://github.com/tesseract-ocr/tessdata/raw/master/deu.traineddata
 wget https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata
