@@ -34,3 +34,4 @@ wget https://github.com/tesseract-ocr/tessdata/raw/master/deu.traineddata
 wget https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata
 wget https://github.com/tesseract-ocr/tessdata/raw/master/nld.traineddata
 mv *.traineddata /usr/local/share/tessdata
+yes | cp leftconnect /usr/local/share/tessdata/configs -f
